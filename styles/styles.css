@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,300&display=swap');
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+    line-height: 1.6;
+}
+
+.dropbtn{
+    background-color:black;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border:.5px solid black;
+}
+
+.language{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.language:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.nav-banner{
+    background: #383837 url("https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/5b9fdff5-be3d-4fc6-9606-dd1b4002f277/IN-en-20220530-popsignuptwoweeks-perspective_alpha_website_large.jpg") 0 0 no-repeat;
+     height: 100vh;
+     background-image: 
+              linear-gradient(45deg, rgba(0, 0, 0, .9), rgba(11, 9, 9, 0.58)), url(
+'https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/5b9fdff5-be3d-4fc6-9606-dd1b4002f277/IN-en-20220530-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+   padding: 40px;
+    
+}
+
+.logo img{
+    height: 50px;
+    width: 200px;
+}
+
+
+.nav{
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    color: white;
+    background-color: red;
+    padding: 8px;
+    border:0 solid transparent;
+    border-radius: 2.5px;
+}
+
+.motto{
+    grid-row: 1 /span 3;
+    font-size: 60px;
+}
+
+.register-q{
+    font-size: 15px;
+}
+
+.form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 160px;
+}
+
+.email-input{
+    grid-row: 1/span 2;
+    height: 70px;
+    grid-column: 2/span 1;
+    font-size: 28px;
+}
+
+.register-btn{
+    grid-row: 1/span 2;
+    grid-column: 3/span 1;
+    width: 55%;
+    font-size: 28px;
+}
+
+.feature1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.tv-quote h1{
+    font-size: 40px;
+}
+
+.tv-quote .h2{
+    font-size: 30px;
+}
+
+.tv-quote{
+    text-align: start;
+    justify-content: center;
+    padding: 46px;
+    padding-left: 100px;
+}
+
+.tv-container{
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png") no-repeat top transparent;
+position: relative;
+padding-left: 110px;
+    padding-top: 60px;
+}
+
+.tv-container video{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    
+}
+
+
+.mobile-container{
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg") no-repeat top transparent;
+    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px;
+    padding-top: 350px;
+    padding-left: 300px; */
+}
+
+.download-card{
+    border-radius: 5px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 10% 70% 20% ;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid rgb(118, 118, 118);
+    background-color: black;
+    width: 400px;
+}
+
+.series{
+    height: 90px;
+}
+
+.gif{
+    height: 70px;
+
+}
+
+.download h1{
+    font-size: 40px;
+}
+
+.download h2{
+    font-size: 30px;
+}
+.download{
+    text-align: start;
+}
