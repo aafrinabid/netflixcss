@@ -1,38 +1,26 @@
-const pluses=document.querySelectorAll('.plus');
-
+const questions=document.querySelectorAll('.request-card');
+   
 // const closer=document.querySelectorAll('#closer');
-console.log(pluses)
-pluses.forEach((plus)=>{
+console.log(questions)
 
-    plus.addEventListener('click',function(){
-    
-    const popUpcard=document.querySelector('.request-pop');
-        
-    
-        if(plus.className=="plus"){
-            popUpcard.classList.remove('request-pop')
-            popUpcard.classList.add('request-pop-up')
-            plus.classList.remove('plus')
-            plus.classList.add('cross')
-            plus.setAttribute('id','closer');
-            plus.innerHTML=`<i class="fa-solid fa-xmark"></i>`
-        }
-        // if(plus.className='cross'){
-        //     popUpcard.classList.remove('request-pop-up')
-        //     popUpcard.classList.add('request-pop')
-        //     plus.innerHTML=`<i class="fa-solid fa-plus"></i>`
-        //     plus.classList.remove('cross')
-        //     plus.classList.add('plus')
-        // }
-    
-    
-    
-        
-        
+
+questions.forEach((question)=>{
+    const btn=question.querySelector('.question-btn')
+
+    btn.addEventListener('click',()=>{
+
+        questions.forEach((item)=>{
+            if(item!==question){
+                item.classList.remove('show-text')
+                console.log('removed')
+            }
+            
+        })
+
+        question.classList.toggle('show-text')
+        console.log(question)
     })
 })
-console.log('clicked',plus)
-
 // closer.addEventListener('click',function(){
 //     popUpcard.classList.remove('request-pop-up')
 //     popUpcard.classList.add('request-pop')
