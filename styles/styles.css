@@ -7,6 +7,7 @@ html{
 }
 
 body{
+    background-color: black;
     margin: 0;
     padding: 0;
     font-family: 'Raleway',sans-serif;
@@ -207,23 +208,38 @@ padding-left: 110px;
 .request{
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
     background-color: black;
-    height: 900px;
+    height: 100vh;
     grid-gap: 15px;
+}
+
+.section-center{
+    /* padding: 10px; */
+    margin: 0 auto;
+    /* position: absolute; */
+    display: block;
+    padding: 0;
+    /* height: 80px; */
+    width: 90vw;
+    background-color: rgb(94, 89, 89);
+    /* border: .5px ; */
+    max-width: 620px;
 }
 
 .request-card{
     /* padding: 10px; */
-    margin: 0;
+    margin: 0 ;
     /* position: absolute; */
     display: block;
-    height: 80px;
-    width: 810px;
-    background-color: rgb(94, 89, 89);
+    /* padding: 1.5rem 1.5rem 0 1.5rem; */
+    margin-bottom: 2rem;
+    /* height: 80px; */
+    /* width: 800px; */
+    background-color: rgb(53, 53, 53);
     border: .5px ;
+    /* max-width: 620px; */
+    font-size: 18px;
 }
 
 
@@ -271,9 +287,13 @@ i{
 
 .request-pop{
     display:none;
+    padding: 1rem 1.5rem 0;
+
     /* grid-template-columns: 1fr; */
-    position: relative;
-    background-color: rgb(94, 89, 89);
+    /* position: relative; */
+    background-color: rgb(53, 53, 53);
+    
+
 
     /* min-width: 160px; */
     /* box-shadow: 0px 8px 16px 0px rgba(244, 0, 0, 0.2); */
@@ -289,6 +309,9 @@ i{
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
+    padding-bottom: 1rem;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -309,3 +332,9 @@ i{
 .minus-icon{
 display: none;
 }
+ .heading{
+     text-align: center;
+     font-size: 30px;
+     background-color: black;
+     padding: 0;
+ }
