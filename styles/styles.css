@@ -286,6 +286,7 @@ i{
 }
 
 .request-pop{
+    transition: all 2.4s;
     display:none;
     padding: 1rem 1.5rem 0;
 
@@ -319,6 +320,7 @@ i{
 
 .show-text .request-pop{
     display: block;
+    transition: all 2s;
 }
 
 .show-text .plus-icon{
